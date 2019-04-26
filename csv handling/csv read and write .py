@@ -7,3 +7,11 @@ with open(file,"w") as f :
     for line in data:
         writerfile.writerow(line)
 f.close()
+
+
+
+with open(file,"r") as f:
+    reader = csv.reader(f)
+    for line in reader:
+        print("".join(line))
+f.close()
